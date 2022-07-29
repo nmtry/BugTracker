@@ -1,0 +1,52 @@
+.login-component {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.login-form {
+    width: 40%;
+    padding: 15px;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.52);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.login-welcome {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#login-username {
+    width: 100%;
+}
+
+#login-password {
+    width: 100%;
+}
+
+#login-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.alert {
+    margin-top: 10px;
+}
+
+.bi {
+    margin-right: 10px;
+}

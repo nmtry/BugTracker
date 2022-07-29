@@ -1,6 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import { useState } from "react";
 import '../css/Layout-css.css';
+import bugTrackerLogo from '../assets/images/BugTrackerLogo2.png';
 
 const Layout = () => {
     const[homeActive, setHomeActive] = useState("nav-link active");
@@ -18,9 +19,9 @@ const Layout = () => {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar-id">
                 <div className="container-fluid">
-                    <Link className="navbar-brand" to="/">BugTracker</Link>
+                    <Link className="navbar-brand" to="/"><img width="70" height="70" className="logo-img" src={bugTrackerLogo} alt="BugTracker logo"/> BugTracker</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>

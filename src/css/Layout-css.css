@@ -25,3 +25,10 @@
   .navbar-active {
     background-color: #04AA6D;
   }
+
+  #navbar-id {
+    padding: 20px;
+  }
+
+  .logo-img {
+  }

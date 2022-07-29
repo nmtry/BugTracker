@@ -2,7 +2,7 @@ import { useState } from "react";
 import '../css/Login-css.css';
 import { Link } from "react-router-dom";
 
-const Login = () => {
+const Register = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [hasUsernameError, setHasUsernameError] = useState(false);
@@ -120,12 +120,11 @@ const Login = () => {
     return (
         <div className="login-component">
             <div className="login-form">
-                <h1 className="login-header">Login</h1>
-                <h2 className="login-welcome">Welcome Back!</h2>
+                <h1>Login</h1>
                 <form onSubmit={handleSubmit}>
                     <div className="row mb-3">
                         <label for="username">Username/Email:</label>
-                        <div className="col-sm-10" id="login-username">
+                        <div className="col-sm-10">
                             <input type="text" className={usernameClass} id="username" name="username" placeholder="Enter your username/email. . ." onChange={(e) => handleUsernameChange(e.target.value)} onBlur={(e) => handleUsernameChange(e.target.value)}></input>
                             {hasUsernameError && renderErrorMessage(usernameError)}
                         </div>
@@ -133,14 +132,14 @@ const Login = () => {
 
                     <div className="row mb-3">
                         <label for="password">Password:</label>
-                        <div className="col-sm-10" id="login-password">
+                        <div className="col-sm-10">
                             <input type="password" className={passwordClass} id="password" name="password" placeholder="Enter your password. . ." onChange={(e) => handlePasswordChange(e.target.value)} onBlur={(e) => handlePasswordChange(e.target.value)}></input>
                             {hasPasswordError && renderErrorMessage(passwordError)}
                         </div>
                     </div>
                     
                     <div className="row mb-3">
-                        <div className="col-sm-10" id="login-btn">
+                        <div className="col-sm-10">
                             <input type="submit" value="Login" className="btn btn-primary"></input>
                             {hasSubmitError && renderSubmitError(submitError)}
                         </div>
@@ -157,4 +156,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Register;
